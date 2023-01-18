@@ -1,110 +1,161 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
-    <script src="https://unpkg.com/phosphor-icons"></script>
-    <title>Casa Bouganville</title>
-  </head>
 
-  <body>
-    <section class="hero_section">
-      <header>
-        <img alt="logo" src="./assets/logo.png" />
-      </header>
-      <div class="hero_img">
-        <img alt="imagem" src="./assets/casinha.png" />
-      </div>
-      <div class="hero_side">
-        <div class="hero_content">
-          <h1>
-            Casa de temporada para os melhores
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+  <script src="https://unpkg.com/phosphor-icons"></script>
+  <title>Casa Bouganville</title>
+</head>
 
-            <span
-              >momentos.<img class="sketch" src="./assets/Frame.svg"
-            /></span>
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            molestie rhoncus sem id suscipit. Phasellus blandit placerat metus
-            malesuada lobortis. Nulla efficitur massa vitae consequat dignissim.
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia curae; Etiam aliquam ult.
-          </p>
-          <a
-            class="btnFill"
-            target="_blank"
-            href="https://linktr.ee/casabouganville.novoairao"
-          >
-            AGENDE AGORA
-          </a>
-        </div>
+<body>
+  <section class="hero_section">
+    <header>
+      <img alt="logo" src="./assets/logo.png" />
+    </header>
+    <div class="hero_img">
+      <img alt="imagem" src="./assets/casinha.png" />
+    </div>
+    <div class="hero_side">
+      <div class="hero_content">
+        <h1>
+          Casa de temporada para os melhores
+
+          <span>momentos.<img class="sketch" src="./assets/Frame.svg" /></span>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          molestie rhoncus sem id suscipit. Phasellus blandit placerat metus
+          malesuada lobortis. Nulla efficitur massa vitae consequat dignissim.
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia curae; Etiam aliquam ult.
+        </p>
+        <a class="btnFill" target="_blank" href="https://linktr.ee/casabouganville.novoairao">
+          AGENDE AGORA
+        </a>
       </div>
+    </div>
+  </section>
+
+  <section class="sobre">
+    <div class="icones">
+      <i class="ph-bed"></i>
+      <i class="ph-wifi-high"></i>
+      <i class="ph-coffee"></i>
+      <i class="ph-wind"></i>
+      <i class="ph-television-simple"></i>
+      <i class="ph-boat"></i>
+    </div>
+    <p>
+      On the other hand, we denounce with righteous indignation and dislike
+      men who are so beguiled and demoralized by the charms of pleasure of the
+      moment, so blinded by desire.
+    </p>
+  </section>
+
+  <section class="gallery">
+    <section class="carousel" aria-label="Gallery">
+      <ol class="carousel__viewport">
+        <li id="carousel__slide1"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper">
+            <a href="#carousel__slide4"
+               class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide2"
+               class="carousel__next">Go to next slide</a>
+          </div>
+        </li>
+        <li id="carousel__slide2"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide1"
+             class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide3"
+             class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide3"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide2"
+             class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide4"
+             class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide4"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide3"
+             class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide1"
+             class="carousel__next">Go to first slide</a>
+        </li>
+      </ol>
+      <aside class="carousel__navigation">
+        <ol class="carousel__navigation-list">
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide1"
+               class="carousel__navigation-button">Go to slide 1</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide2"
+               class="carousel__navigation-button">Go to slide 2</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide3"
+               class="carousel__navigation-button">Go to slide 3</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide4"
+               class="carousel__navigation-button">Go to slide 4</a>
+          </li>
+        </ol>
+      </aside>
     </section>
+  </section>
 
-    <section class="sobre">
-      <div class="icones">
-        <i class="ph-bed"></i>
-        <i class="ph-wifi-high"></i>
-        <i class="ph-coffee"></i>
-        <i class="ph-wind"></i>
-        <i class="ph-television-simple"></i>
-        <i class="ph-boat"></i>
+  <section class="prices">
+    <h2>Diárias</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="./assets/flower1.png" alt="flor" />
+        <p>Single</p>
       </div>
-      <p>
-        On the other hand, we denounce with righteous indignation and dislike
-        men who are so beguiled and demoralized by the charms of pleasure of the
-        moment, so blinded by desire.
-      </p>
-    </section>
-
-    <section class="gallery"></section>
-
-    <section class="prices">
-      <h2>Diárias</h2>
-      <div class="cards">
-        <div class="card">
-          <img src="./assets/flower1.png" alt="flor" />
-          <p>Single</p>
-          <a target="_blank" href="https://wa.me/5592992866464">Ver preço</a>
-        </div>
-        <div class="card">
-          <img src="./assets/flower2.png" alt="flor" />
-          <p>Casal</p>
-          <a target="_blank" href="https://wa.me/5592992866464">Ver preço</a>
-        </div>
-        <div class="card">
-          <img src="./assets/flower3.png" alt="flor" />
-          <p>Triplo</p>
-          <a target="_blank" href="https://wa.me/5592992866464">Ver preço</a>
-        </div>
+      <div class="card">
+        <img src="./assets/flower2.png" alt="flor" />
+        <p>Casal</p>
       </div>
-      <div class="checks">
-        <div class="check">
-          <i class="ph-calendar-check"></i>
-          <p>13:00 Check-in</p>
-        </div>
-        <div class="check">
-          <i class="ph-calendar-check"></i>
-          <p>12:00 Check-out</p>
-        </div>
+      <div class="card">
+        <img src="./assets/flower3.png" alt="flor" />
+        <p>Triplo</p>
       </div>
-      <p>
-        Obs: a confirmação de reserva é feita mediante pgto de 50% do total da
-        reserva.
-      </p>
-      <a
-        class="btnStroke"
-        target="_blank"
-        href="https://linktr.ee/casabouganville.novoairao"
-      >
-        AGENDE AGORA
-      </a>
-    </section>
+    </div>
+    <div class="checks">
+      <div class="check">
+        <i class="ph-calendar-check"></i>
+        <p>13:00 Check-in</p>
+      </div>
+      <div class="check">
+        <i class="ph-calendar-check"></i>
+        <p>12:00 Check-out</p>
+      </div>
+    </div>
+    <p>
+      Obs: a confirmação de reserva é feita mediante pgto de 50% do total da
+      reserva.
+    </p>
+    <a class="btnStroke" target="_blank" href="https://linktr.ee/casabouganville.novoairao">
+      VER PREÇOS
+    </a>
+  </section>
 
-    <script src="./script.js"></script>
-  </body>
+  <script src="./script.js"></script>
+</body>
+
 </html>
