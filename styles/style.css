@@ -171,14 +171,22 @@ body {
 }
 .gallery .choice {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
   box-sizing: border-box;
+  overflow-x: scroll;
+  gap: 15px;
+  height: 100px;
+}
+.gallery .choice::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+.gallery .choice {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
 }
 .gallery .choice img {
-  width: 31.6666666667%;
-  height: 110px;
-  border-radius: 20px;
+  min-width: 28.3333333333%;
+  border-radius: 15px;
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
@@ -216,6 +224,7 @@ body {
 .gallery .carrosel #images {
   display: flex;
   transition: all 0.3s ease;
+  min-height: 350px;
 }
 .gallery .carrosel #images img {
   width: 100%;
