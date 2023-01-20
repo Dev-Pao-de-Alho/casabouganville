@@ -203,6 +203,7 @@ body {
   justify-content: center;
   overflow: hidden;
   border-radius: 40px;
+  transform: translateZ(0);
 }
 .gallery .carrosel i {
   position: absolute;
