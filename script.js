@@ -52,3 +52,29 @@ function mudaCarrosel(id) {
 }
 
 // -------------------------------------------------------------
+
+// Testimonials
+let auxTestimonial = document.getElementById("test").style.transform;
+console.log(auxTestimonial);
+let contador = 0;
+
+document.getElementById("right").addEventListener("click", () => {
+  if (auxTestimonial == "" || auxTestimonial == "translateX(-0px)") {
+    auxTestimonial = "translateX(-750px)";
+  } else {
+    if (auxTestimonial.length >= 18) {
+      auxTestimonial = `translateX(${auxTestimonial.slice(11, 15) - 750}px)`;
+      console.log(auxTestimonial);
+    }
+  }
+
+  if (contador >= 2) {
+    auxTestimonial = "translateX(-0px)";
+    document.getElementById("test").style.transform = auxTestimonial;
+    contador = 0;
+  } else {
+    document.getElementById("test").style.transform = auxTestimonial;
+    contador += 1;
+  }
+  console.log(auxTestimonial);
+});

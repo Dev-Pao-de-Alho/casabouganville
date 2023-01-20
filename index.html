@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
     <script src="https://unpkg.com/phosphor-icons"></script>
     <title>Casa Bouganville</title>
@@ -13,13 +14,18 @@
   <body>
     <section class="hero_section">
       <header>
-        <img alt="logo" src="./assets/logo.png" />
+        <img
+          alt="logo"
+          data-aos-duration="800"
+          data-aos="fade-right"
+          src="./assets/logo.png"
+        />
       </header>
       <div class="hero_img">
         <img alt="imagem" src="./assets/casinha.png" />
       </div>
       <div class="hero_side">
-        <div class="hero_content">
+        <div data-aos="fade-left" data-aos-duration="800" class="hero_content">
           <h1>
             Casa de temporada para os melhores
 
@@ -45,7 +51,7 @@
       </div>
     </section>
 
-    <section class="sobre">
+    <section class="about">
       <div class="icones">
         <i class="ph-bed"></i>
         <i class="ph-wifi-high"></i>
@@ -145,7 +151,7 @@
         </div>
       </div>
 
-      <div class="right">
+      <div data-aos-duration="800" data-aos="fade-left" class="right">
         <h2>On the other hand</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -168,7 +174,7 @@
 
     <section class="prices">
       <h2>Diárias</h2>
-      <div class="cards">
+      <div data-aos="zoom-in" data-aos-duration="800" class="cards">
         <div class="card">
           <img src="./assets/flower1.png" alt="flor" />
           <p>Single</p>
@@ -205,6 +211,72 @@
       </a>
     </section>
 
+    <section class="testimonials">
+      <div class="testimonialsBox">
+        <div class="arrows">
+          <i id="left" class="ph-arrow-circle-left"></i>
+          <i id="right" class="ph-arrow-circle-right"></i>
+        </div>
+        <div id="test" class="depoimentos">
+          <div class="user">
+            <div class="imagem-user">
+              <img src="./assets/testimonials/user1.jpeg" alt="user" />
+            </div>
+
+            <div class="content">
+              <p>
+                “On the other hand, we denounce with righteous indignation and
+                dislike men who are so beguiled and demoralized by the charms of
+                pleasure of the moment, so blinded by desire.”
+              </p>
+              <p>Vinícius Berwanger</p>
+              <p>Manaus, AM</p>
+            </div>
+          </div>
+          <div class="user">
+            <div class="imagem-user">
+              <img src="./assets/testimonials/user2.jpeg" alt="user" />
+            </div>
+            <div class="content">
+              <p>
+                “On the other hand, we denounce with righteous indignation and
+                dislike men who are so beguiled and demoralized by the charms of
+                pleasure of the moment, so blinded by desire.”
+              </p>
+              <p>Manoel Gomes</p>
+              <p>Balsas, MA</p>
+            </div>
+          </div>
+          <div class="user">
+            <div class="imagem-user">
+              <img src="./assets/testimonials/user3.jpg" alt="user" />
+            </div>
+            <div class="content">
+              <p>
+                “On the other hand, we denounce with righteous indignation and
+                dislike men who are so beguiled and demoralized by the charms of
+                pleasure of the moment, so blinded by desire.”
+              </p>
+              <p>Bruno Cabral</p>
+              <p>Goiânia, GO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners">
+      <h2>Parceiros</h2>
+      <div class="logomarcas">
+        <img src="./assets/partners/paodealho.png" alt="Pão de Alho" />
+        <img src="./assets/partners/ecoalert.png" alt="EcoAlert" />
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"></script>
     <script src="./script.js"></script>
   </body>
