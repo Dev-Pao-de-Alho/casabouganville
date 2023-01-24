@@ -56,25 +56,38 @@ function mudaCarrosel(id) {
 // Testimonials
 let auxTestimonial = document.getElementById("test").style.transform;
 console.log(auxTestimonial);
-let contador = 0;
 
 document.getElementById("right").addEventListener("click", () => {
-  if (auxTestimonial == "" || auxTestimonial == "translateX(-0px)") {
-    auxTestimonial = "translateX(-750px)";
+  if (auxTestimonial == "" || auxTestimonial == "translateX(0%)") {
+    auxTestimonial = "translateX(-33%)";
   } else {
     if (auxTestimonial.length >= 18) {
-      auxTestimonial = `translateX(${auxTestimonial.slice(11, 15) - 750}px)`;
-      console.log(auxTestimonial);
+      auxTestimonial = `translateX(${auxTestimonial.slice(11, 15) - 33}%)`;
+    } else {
+      auxTestimonial = `translateX(${auxTestimonial.slice(11, 14) - 33}%)`;
     }
   }
 
-  if (contador >= 2) {
-    auxTestimonial = "translateX(-0px)";
-    document.getElementById("test").style.transform = auxTestimonial;
-    contador = 0;
-  } else {
-    document.getElementById("test").style.transform = auxTestimonial;
-    contador += 1;
+  if (auxTestimonial === "translateX(-99%)") {
+    auxTestimonial = "translateX(0%)";
   }
-  console.log(auxTestimonial);
+  document.getElementById("test").style.transform = auxTestimonial;
+});
+
+document.getElementById("left").addEventListener("click", () => {
+  if (auxTestimonial == "" || auxTestimonial == "translateX(0%)") {
+    auxTestimonial = "translateX(-66%)";
+  } else {
+    if (auxTestimonial.length >= 18) {
+      auxTestimonial = `translateX(${
+        Number(auxTestimonial.slice(11, 15)) + 33
+      }%)`;
+    } else {
+      auxTestimonial = `translateX(${
+        Number(auxTestimonial.slice(11, 14)) + 33
+      }%)`;
+    }
+  }
+
+  document.getElementById("test").style.transform = auxTestimonial;
 });

@@ -391,7 +391,7 @@ body {
 
   .depoimentos {
     display: flex;
-    transform: translateX(-0px);
+    // transform: translateX(-33%);
     transition: all 0.4s ease-in-out;
 
     .user {
@@ -404,6 +404,7 @@ body {
         flex-direction: column;
         gap: 5px;
         margin-top: 0px;
+
 
         p:first-of-type {
           font-size: 23px;

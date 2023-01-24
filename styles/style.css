@@ -325,7 +325,6 @@ body {
 }
 .testimonials .depoimentos {
   display: flex;
-  transform: translateX(0px);
   transition: all 0.4s ease-in-out;
 }
 .testimonials .depoimentos .user {
