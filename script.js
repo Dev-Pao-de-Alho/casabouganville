@@ -54,40 +54,22 @@ function mudaCarrosel(id) {
 // -------------------------------------------------------------
 
 // Testimonials
-let auxTestimonial = document.getElementById("test").style.transform;
-console.log(auxTestimonial);
+let testimonials = document.getElementById("test");
+let user = testimonials.getElementsByClassName("user");
+let currentIndex = 0;
 
 document.getElementById("right").addEventListener("click", () => {
-  if (auxTestimonial == "" || auxTestimonial == "translateX(0%)") {
-    auxTestimonial = "translateX(-33%)";
-  } else {
-    if (auxTestimonial.length >= 18) {
-      auxTestimonial = `translateX(${auxTestimonial.slice(11, 15) - 33}%)`;
-    } else {
-      auxTestimonial = `translateX(${auxTestimonial.slice(11, 14) - 33}%)`;
-    }
-  }
-
-  if (auxTestimonial === "translateX(-99%)") {
-    auxTestimonial = "translateX(0%)";
-  }
-  document.getElementById("test").style.transform = auxTestimonial;
+  user[currentIndex].classList.remove("user-active");
+  currentIndex = (currentIndex + 1) % user.length;
+  user[currentIndex].classList.add("user-active");
 });
 
 document.getElementById("left").addEventListener("click", () => {
-  if (auxTestimonial == "" || auxTestimonial == "translateX(0%)") {
-    auxTestimonial = "translateX(-66%)";
+  user[currentIndex].classList.remove("user-active");
+  if (currentIndex == 0) {
+    currentIndex = user.length - 1;
   } else {
-    if (auxTestimonial.length >= 18) {
-      auxTestimonial = `translateX(${
-        Number(auxTestimonial.slice(11, 15)) + 33
-      }%)`;
-    } else {
-      auxTestimonial = `translateX(${
-        Number(auxTestimonial.slice(11, 14)) + 33
-      }%)`;
-    }
+    currentIndex = (currentIndex - 1) % user.length;
   }
-
-  document.getElementById("test").style.transform = auxTestimonial;
+  user[currentIndex].classList.add("user-active");
 });

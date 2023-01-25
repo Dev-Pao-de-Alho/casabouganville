@@ -327,10 +327,18 @@ body {
   display: flex;
   transition: all 0.4s ease-in-out;
 }
+.testimonials .depoimentos .user-active {
+  display: flex !important;
+  -webkit-animation: testimonialAnimation 1.5s;
+          animation: testimonialAnimation 1.5s;
+}
 .testimonials .depoimentos .user {
-  display: flex;
+  display: none;
   gap: 35px;
   width: 750px;
+}
+.testimonials .depoimentos .user:last-child .imagem-user {
+  width: 94%;
 }
 .testimonials .depoimentos .user .content {
   display: flex;
@@ -454,4 +462,32 @@ body {
   align-items: center;
   color: #fefffc;
   font-size: 13px;
+}
+
+@-webkit-keyframes testimonialAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes testimonialAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .hero_section .hero_content {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    background-color: tan;
+  }
 }/*# sourceMappingURL=style.css.map */
