@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap");
 @font-face {
   font-family: "Bodoni 72";
-  src: url("./assets/fonts/Bodoni-72-Bold.otf");
+  src: "./assets/fonts/Bodoni-72-Bold.otf";
 }
 * {
   padding: 0;
@@ -16,6 +16,7 @@
 body {
   background-color: #fefffc;
   color: #3f3f3f;
+  overflow-x: hidden;
 }
 
 .btnFill {
@@ -127,7 +128,10 @@ body {
 }
 .about .icones {
   display: flex;
-  gap: 50px;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 50%;
+  justify-content: center;
 }
 .about .icones i {
   font-size: 40px;
@@ -255,6 +259,8 @@ body {
   flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 5px;
+  width: 80%;
+  justify-content: center;
 }
 .prices .cards .card {
   display: flex;
@@ -453,6 +459,8 @@ body {
 .contato .up_contato .image-container img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .contato footer {
   height: 60px;
@@ -484,10 +492,176 @@ body {
 @media screen and (max-width: 1115px) {
   .hero_section .hero_content {
     margin-left: 50px;
+    width: 80%;
+  }
+  .gallery .right {
+    width: 40%;
+    margin-top: 70px;
+    gap: 10px;
+  }
+  .gallery .right p {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .gallery .left {
+    max-width: 400px;
+    align-self: flex-start;
+    margin-top: 80px;
+  }
+  .gallery .left .choice {
+    height: 80px;
+  }
+  .gallery .left .carrosel {
+    height: 250px;
+    border-radius: 20px;
+  }
+  .contato .up_contato {
+    height: 250px;
   }
 }
 @media screen and (max-width: 800px) {
-  body {
-    background-color: tan;
+  .hero_section {
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+  }
+  .hero_section header {
+    top: 0;
+    margin-top: 25px;
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .hero_section header img {
+    width: 100px;
+  }
+  .hero_section .hero_img,
+.hero_section .hero_side {
+    width: 100%;
+  }
+  .hero_section .hero_side {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+  }
+  .hero_section .hero_side .hero_content {
+    margin: 0;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+  }
+  .about p {
+    max-width: 70%;
+  }
+  .gallery {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .gallery .left {
+    margin: 0;
+    max-width: 80%;
+    align-self: center;
+    margin-top: 60px;
+  }
+  .gallery .right {
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 52px;
+  }
+  .gallery .right p {
+    font-size: 14px;
+  }
+  .prices {
+    height: auto;
+    padding: 40px 50px;
+  }
+  .prices .cards {
+    margin-top: 10px;
+  }
+  .prices .checks {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .prices .checks i {
+    font-size: 35px;
+  }
+  .prices .checks p {
+    font-size: 28px;
+  }
+  .prices p {
+    text-align: center;
+  }
+  .testimonials {
+    height: auto;
+    padding: 60px;
+    position: relative;
+  }
+  .testimonials .testimonialsBox {
+    overflow: auto;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    position: static;
+  }
+  .testimonials .testimonialsBox .arrows {
+    margin: 0;
+    font-size: 50px;
+    margin-bottom: 45px;
+  }
+  .testimonials .testimonialsBox .user {
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    gap: 25px;
+    margin-bottom: 50px;
+  }
+  .testimonials .testimonialsBox .user .content p:first-of-type {
+    margin-bottom: 5px;
+    line-height: 32px;
+  }
+  .testimonials .testimonialsBox .user .content p {
+    font-size: 22px;
+  }
+  .testimonials .testimonialsBox .user .content p:last-of-type {
+    font-size: 18px;
+  }
+  .testimonials .testimonialsBox .user .imagem-user {
+    height: 280px;
+    width: 270px;
+    margin: auto;
+  }
+  .partners {
+    height: auto;
+    padding: 40px 50px;
+  }
+  .partners .logomarcas img {
+    width: 100px;
+  }
+  .contato .up_contato {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .contato .up_contato .image-container {
+    width: 100;
+    display: none;
+  }
+  .contato .up_contato .contato_content {
+    width: 100%;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+  }
+  .contato footer {
+    border-top: 1px solid #fefffc;
   }
 }/*# sourceMappingURL=style.css.map */
