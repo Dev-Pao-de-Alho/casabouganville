@@ -561,6 +561,7 @@ body {
     .image-container {
       display: flex;
       width: 50%;
+      height: 400px;
 
       img {
         width: 100%;
@@ -630,6 +631,10 @@ body {
   .contato {
     .up_contato {
       height: 250px;
+
+      .image-container{
+        height: 100%;
+      }
     }
   }
 }
@@ -757,6 +762,18 @@ body {
         margin: auto;
         gap: 25px;
         margin-bottom: 50px;
+        
+        &:first-child {
+          .content {
+            p:first-of-type {
+              font-size: 20px;
+            }
+          }
+  
+          .imagem-user {
+            width: 100%;
+          }
+        }
 
         .content {
           p:first-of-type {
@@ -802,6 +819,7 @@ body {
 
       .image-container {
         width: 100%;
+        height: 400px;
         margin: auto;
         img {
           height: 400px;
