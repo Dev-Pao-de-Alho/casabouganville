@@ -416,6 +416,24 @@ body {
         }
       }
 
+      &:nth-child(2) {
+        .imagem-user {
+          width: 104%;
+        }
+      }
+
+      &:first-child {
+        .content {
+          p:first-of-type {
+            font-size: 20px;
+          }
+        }
+
+        .imagem-user {
+          width: 140%;
+        }
+      }
+
       .content {
         display: flex;
         flex-direction: column;
@@ -746,11 +764,11 @@ body {
             line-height: 32px;
           }
 
-          p{
+          p {
             font-size: 22px;
           }
 
-          p:last-of-type{
+          p:last-of-type {
             font-size: 18px;
           }
         }
@@ -776,13 +794,19 @@ body {
   }
 
   .contato {
+    height: auto;
+
     .up_contato {
       flex-direction: column-reverse;
-      justify-content: center;
+      margin-top: 428px;
 
       .image-container {
-        width: 100;
-        display: none;
+        width: 100%;
+        margin: auto;
+        img {
+          height: 400px;
+          object-fit: cover;
+        }
       }
       .contato_content {
         width: 100%;
@@ -801,5 +825,60 @@ body {
 }
 
 // Responsividade para celulares de 800px até 500px
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
+  .about {
+    height: auto;
+    padding: 40px 0px;
+  }
+
+  .gallery {
+    .left {
+      .carrosel {
+        height: 170px;
+        max-width: 300px;
+        margin: auto;
+
+        i {
+          margin-top: -30px;
+        }
+      }
+
+      .choice {
+        height: 55px;
+        max-width: 300px;
+        gap: 10px;
+
+        img {
+          border-radius: 10px;
+          min-width: calc(100% / 4);
+        }
+      }
+    }
+  }
+
+  .testimonials {
+    .testimonialsBox {
+      .depoimentos {
+        .user {
+          width: 90%;
+          p:first-of-type {
+            font-size: 19px;
+          }
+
+          p {
+            font-size: 18px;
+          }
+
+          p:last-of-type {
+            font-size: 15px;
+          }
+
+          .imagem-user {
+            width: 180px;
+            height: 190px;
+          }
+        }
+      }
+    }
+  }
 }

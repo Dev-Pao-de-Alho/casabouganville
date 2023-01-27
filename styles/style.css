@@ -346,6 +346,15 @@ body {
 .testimonials .depoimentos .user:last-child .imagem-user {
   width: 94%;
 }
+.testimonials .depoimentos .user:nth-child(2) .imagem-user {
+  width: 104%;
+}
+.testimonials .depoimentos .user:first-child .content p:first-of-type {
+  font-size: 20px;
+}
+.testimonials .depoimentos .user:first-child .imagem-user {
+  width: 140%;
+}
 .testimonials .depoimentos .user .content {
   display: flex;
   flex-direction: column;
@@ -645,13 +654,21 @@ body {
   .partners .logomarcas img {
     width: 100px;
   }
+  .contato {
+    height: auto;
+  }
   .contato .up_contato {
     flex-direction: column-reverse;
-    justify-content: center;
+    margin-top: 428px;
   }
   .contato .up_contato .image-container {
-    width: 100;
-    display: none;
+    width: 100%;
+    margin: auto;
+  }
+  .contato .up_contato .image-container img {
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .contato .up_contato .contato_content {
     width: 100%;
@@ -663,5 +680,44 @@ body {
   }
   .contato footer {
     border-top: 1px solid #fefffc;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about {
+    height: auto;
+    padding: 40px 0px;
+  }
+  .gallery .left .carrosel {
+    height: 170px;
+    max-width: 300px;
+    margin: auto;
+  }
+  .gallery .left .carrosel i {
+    margin-top: -30px;
+  }
+  .gallery .left .choice {
+    height: 55px;
+    max-width: 300px;
+    gap: 10px;
+  }
+  .gallery .left .choice img {
+    border-radius: 10px;
+    min-width: 25%;
+  }
+  .testimonials .testimonialsBox .depoimentos .user {
+    width: 90%;
+  }
+  .testimonials .testimonialsBox .depoimentos .user p:first-of-type {
+    font-size: 19px;
+  }
+  .testimonials .testimonialsBox .depoimentos .user p {
+    font-size: 18px;
+  }
+  .testimonials .testimonialsBox .depoimentos .user p:last-of-type {
+    font-size: 15px;
+  }
+  .testimonials .testimonialsBox .depoimentos .user .imagem-user {
+    width: 180px;
+    height: 190px;
   }
 }/*# sourceMappingURL=style.css.map */

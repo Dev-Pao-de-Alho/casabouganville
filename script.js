@@ -1,6 +1,5 @@
 // Carrosel
 let aux = document.getElementById("images").style.transform;
-console.log(aux);
 
 document.getElementById("btnRight").addEventListener("click", () => {
   if (aux == "" || aux == "translateX(0%)") {
