@@ -12,7 +12,7 @@ document.getElementById("btnRight").addEventListener("click", () => {
     }
   }
 
-  if (aux === "translateX(-1200%)") {
+  if (aux === "translateX(-1000%)") {
     aux = "translateX(0%)";
   }
   document.getElementById("images").style.transform = aux;
@@ -20,7 +20,7 @@ document.getElementById("btnRight").addEventListener("click", () => {
 
 document.getElementById("btnLeft").addEventListener("click", () => {
   if (aux == "" || aux == "translateX(0%)") {
-    aux = "translateX(-1100%)";
+    aux = "translateX(-900%)";
   } else {
     if (aux.length >= 18) {
       aux = `translateX(${Number(aux.slice(11, 16)) + 100}%)`;
