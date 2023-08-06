@@ -91,7 +91,7 @@ body {
   margin-left: 100px;
 }
 .hero_section .hero_content h1 {
-  font-size: 50px;
+  font-size: 60px;
   font-family: "Bodoni 72", serif;
   line-height: 45px;
   letter-spacing: -1px;
@@ -109,10 +109,10 @@ body {
   position: relative;
 }
 .hero_section .hero_content p {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 26px;
-  width: 96%;
+  line-height: 30px;
+  width: 100%;
 }
 
 .about {
@@ -140,7 +140,7 @@ body {
   font-family: "Bodoni 72", serif;
   max-width: 50%;
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .gallery {
@@ -163,8 +163,8 @@ body {
   font-weight: 400;
 }
 .gallery .right p {
-  line-height: 28px;
-  font-size: 14px;
+  line-height: 30px;
+  font-size: 18px;
 }
 .gallery .left {
   display: flex;
@@ -335,8 +335,7 @@ body {
 }
 .testimonials .depoimentos .user-active {
   display: flex !important;
-  -webkit-animation: testimonialAnimation 1.5s;
-          animation: testimonialAnimation 1.5s;
+  animation: testimonialAnimation 1.5s;
 }
 .testimonials .depoimentos .user {
   display: none;
@@ -482,15 +481,6 @@ body {
   font-size: 13px;
 }
 
-@-webkit-keyframes testimonialAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes testimonialAnimation {
   from {
     opacity: 0;
@@ -550,7 +540,7 @@ body {
     width: 100px;
   }
   .hero_section .hero_img,
-.hero_section .hero_side {
+  .hero_section .hero_side {
     width: 100%;
   }
   .hero_section .hero_side {
