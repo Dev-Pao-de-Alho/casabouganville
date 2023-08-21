@@ -1,315 +1,236 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
-    <script src="https://unpkg.com/phosphor-icons"></script>
-    <title>Casa Bouganville</title>
-  </head>
 
-  <body>
-    <section class="hero_section">
-      <header>
-        <img
-          alt="logo"
-          data-aos-duration="800"
-          data-aos="fade-right"
-          src="./assets/logo.png"
-        />
-      </header>
-      <div class="hero_img">
-        <img alt="imagem" src="./assets/casinha.jpeg" />
-      </div>
-      <div class="hero_side">
-        <div data-aos="fade-left" data-aos-duration="800" class="hero_content">
-          <h1>
-            Casa de temporada para os melhores
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+  <script src="https://unpkg.com/phosphor-icons"></script>
+  <title>Casa Bouganville</title>
+</head>
 
-            <span
-              >momentos.<img class="sketch" src="./assets/Frame.svg"
-            /></span>
-          </h1>
-          <p>
-            A Casa Bouganville iniciou suas atividades com hospedagem 2013. Uns
-            anos antes, em 1999 começou a experiência com a arte em hospedar,
-            com a fundação da Pousada Pousada Bela Vista, por seus antigos
-            donos, Laura e Hugo Berwanger. O prazer em continuar servindo
-            clientes motivou a criação de um espaço familiar e de aconchego,
-            surgindo assim a Casa Bouganville, que como a flor, se mantém
-            florida ao longo do ano todo, em meio ao clima tropical da região.
-          </p>
-          <a
-            class="btnFill"
-            target="_blank"
-            href="https://linktr.ee/casabouganville.novoairao"
-          >
-            AGENDE AGORA
-          </a>
-        </div>
-      </div>
-    </section>
+<body>
+  <section class="hero_section">
+    <header>
+      <img alt="logo" data-aos-duration="800" data-aos="fade-right" src="./assets/logo.png" />
+    </header>
+    <div class="hero_img">
+      <img alt="imagem" src="./assets/casinha.jpeg" />
+    </div>
+    <div class="hero_side">
+      <div data-aos="fade-left" data-aos-duration="800" class="hero_content">
+        <h1>
+          Casa de temporada para os melhores
 
-    <section class="about">
-      <div class="icones">
-        <i class="ph-wind"></i>
-        <i class="ph-screencast"></i>
-        <i class="ph-shower"></i>
-        <i class="ph-wifi-high"></i>
-        <i class="ph-car"></i>
-      </div>
-      <p>
-        O objetivo é oferecer experiencia de hospedagem confiável e segura, com
-        conforto e aconchego em ambiente familiar e fechado, atendendo somente
-        reservas antecipadas.
-      </p>
-    </section>
-
-    <section class="gallery">
-      <div class="left">
-        <div class="carrosel">
-          <i id="btnLeft" class="ph-caret-left"></i>
-          <i id="btnRight" class="ph-caret-right"></i>
-          <div id="images" loading="lazy">
-            <img src="./assets/gallery/carrosel1.jpeg" />
-            <img src="./assets/gallery/carrosel2.jpeg" />
-            <img src="./assets/gallery/carrosel3.jpeg" />
-            <img src="./assets/gallery/carrosel4.jpeg" />
-            <img src="./assets/gallery/carrosel5.jpeg" />
-            <img src="./assets/gallery/carrosel6.jpeg" />
-            <img src="./assets/gallery/carrosel7.jpeg" />
-            <img src="./assets/gallery/carrosel8.jpeg" />
-            <img src="./assets/gallery/carrosel9.jpeg" />
-          </div>
-        </div>
-        <div class="choice dragscroll">
-          <img
-            id="0"
-            onclick="mudaCarrosel(0)"
-            src="./assets/gallery/carrosel1.jpeg"
-          />
-          <img
-            id="1"
-            onclick="mudaCarrosel(1)"
-            src="./assets/gallery/carrosel2.jpeg"
-          />
-          <img
-            id="2"
-            onclick="mudaCarrosel(2)"
-            src="./assets/gallery/carrosel3.jpeg"
-          />
-          <img
-            id="3"
-            onclick="mudaCarrosel(3)"
-            src="./assets/gallery/carrosel4.jpeg"
-          />
-          <img
-            id="4"
-            onclick="mudaCarrosel(4)"
-            src="./assets/gallery/carrosel5.jpeg"
-          />
-          <img
-            id="5"
-            onclick="mudaCarrosel(5)"
-            src="./assets/gallery/carrosel6.jpeg"
-          />
-          <img
-            id="6"
-            onclick="mudaCarrosel(6)"
-            src="./assets/gallery/carrosel7.jpeg"
-          />
-          <img
-            id="7"
-            onclick="mudaCarrosel(7)"
-            src="./assets/gallery/carrosel8.jpeg"
-          />
-          <img
-            id="8"
-            onclick="mudaCarrosel(8)"
-            src="./assets/gallery/carrosel9.jpeg"
-          />
-        </div>
-      </div>
-
-      <div data-aos-duration="800" data-aos="fade-left" class="right">
-        <h2>Nosso espaço</h2>
+          <span>momentos.<img class="sketch" src="./assets/Frame.svg" /></span>
+        </h1>
         <p>
-          Casa possui dois apartamentos, tipo chalé, compactos e planejados. O
-          quarto é climatizado com ar condicionado split, mobiliado com uma cama
-          de casal e uma cama de solteiro, com TV smart e armário com cabides;
-          banheiro com ducha quente; cozinha com pia, frigobar, microondas,
-          cafeteira e chaleira elétricos, e um balcão para pequenas refeições.
-          Amplo jardim gramado, com estacionamento, churrasqueira móvel e canto
-          com ducha de banho no jardim. encontra-se há 2 km do Parque Nacional
-          de Anavilhanas e há 5 minutos de carro, do centro da cidade.
+          A Casa Bouganville iniciou suas atividades com hospedagem 2013. Uns
+          anos antes, em 1999 começou a experiência com a arte em hospedar,
+          com a fundação da Pousada Pousada Bela Vista, por seus antigos
+          donos, Laura e Hugo Berwanger. O prazer em continuar servindo
+          clientes motivou a criação de um espaço familiar e de aconchego,
+          surgindo assim a Casa Bouganville, que como a flor, se mantém
+          florida ao longo do ano todo, em meio ao clima tropical da região.
         </p>
-        <a
-          href="https://www.instagram.com/casabouganville.novoairao/"
-          target="_blank"
-          class="btnFill"
-          >VEJA MAIS</a
-        >
+        <a class="btnFill" target="_blank" href="https://linktr.ee/casabouganville.novoairao">
+          AGENDE AGORA
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="prices">
-      <h2>Diárias</h2>
-      <div data-aos="zoom-in" data-aos-duration="800" class="cards">
-        <div class="card">
-          <img src="./assets/flower1.png" alt="flor" />
-          <p>Single</p>
-        </div>
-        <div class="card">
-          <img src="./assets/flower2.png" alt="flor" />
-          <p>Casal</p>
-        </div>
-        <div class="card">
-          <img src="./assets/flower3.png" alt="flor" />
-          <p>Triplo</p>
+  <section class="about">
+    <div class="icones">
+      <i class="ph-wind"></i>
+      <i class="ph-screencast"></i>
+      <i class="ph-shower"></i>
+      <i class="ph-wifi-high"></i>
+      <i class="ph-car"></i>
+    </div>
+    <p>
+      O objetivo é oferecer experiencia de hospedagem confiável e segura, com
+      conforto e aconchego em ambiente familiar e fechado, atendendo somente
+      reservas antecipadas.
+    </p>
+  </section>
+
+  <section class="gallery">
+    <div class="left">
+      <div class="carrosel">
+        <i id="btnLeft" class="ph-caret-left"></i>
+        <i id="btnRight" class="ph-caret-right"></i>
+        <div id="images" loading="lazy">
+          <img src="./assets/gallery/carrosel1.jpeg" />
+          <img src="./assets/gallery/carrosel2.jpeg" />
+          <img src="./assets/gallery/carrosel3.jpeg" />
+          <img src="./assets/gallery/carrosel4.jpeg" />
+          <img src="./assets/gallery/carrosel5.jpeg" />
+          <img src="./assets/gallery/carrosel6.jpeg" />
+          <img src="./assets/gallery/carrosel7.jpeg" />
+          <img src="./assets/gallery/carrosel8.jpeg" />
+          <img src="./assets/gallery/carrosel9.jpeg" />
         </div>
       </div>
-      <div class="checks">
-        <div class="check">
-          <i class="ph-calendar-check"></i>
-          <p>13:00 Check-in</p>
-        </div>
-        <div class="check">
-          <i class="ph-calendar-check"></i>
-          <p>12:00 Check-out</p>
-        </div>
+      <div class="choice dragscroll">
+        <img id="0" onclick="mudaCarrosel(0)" src="./assets/gallery/carrosel1.jpeg" />
+        <img id="1" onclick="mudaCarrosel(1)" src="./assets/gallery/carrosel2.jpeg" />
+        <img id="2" onclick="mudaCarrosel(2)" src="./assets/gallery/carrosel3.jpeg" />
+        <img id="3" onclick="mudaCarrosel(3)" src="./assets/gallery/carrosel4.jpeg" />
+        <img id="4" onclick="mudaCarrosel(4)" src="./assets/gallery/carrosel5.jpeg" />
+        <img id="5" onclick="mudaCarrosel(5)" src="./assets/gallery/carrosel6.jpeg" />
+        <img id="6" onclick="mudaCarrosel(6)" src="./assets/gallery/carrosel7.jpeg" />
+        <img id="7" onclick="mudaCarrosel(7)" src="./assets/gallery/carrosel8.jpeg" />
+        <img id="8" onclick="mudaCarrosel(8)" src="./assets/gallery/carrosel9.jpeg" />
       </div>
+    </div>
+
+    <div data-aos-duration="800" data-aos="fade-left" class="right">
+      <h2>Nosso espaço</h2>
       <p>
-        OBS: A confirmação de reserva é feita mediante pagamento adiantado de 50% do total
-        da reserva.
+        Casa possui dois apartamentos, tipo chalé, compactos e planejados. O
+        quarto é climatizado com ar condicionado split, mobiliado com uma cama
+        de casal e uma cama de solteiro, com TV smart e armário com cabides;
+        banheiro com ducha quente; cozinha com pia, frigobar, microondas,
+        cafeteira e chaleira elétricos, e um balcão para pequenas refeições.
+        Amplo jardim gramado, com estacionamento, churrasqueira móvel e canto
+        com ducha de banho no jardim. encontra-se há 2 km do Parque Nacional
+        de Anavilhanas e há 5 minutos de carro, do centro da cidade.
       </p>
-      <a
-        class="btnStroke"
-        target="_blank"
-        href="https://linktr.ee/casabouganville.novoairao"
-      >
-        VER PREÇOS
+      <a href="https://www.instagram.com/casabouganville.novoairao/" target="_blank" class="btnFill">VEJA MAIS</a>
+    </div>
+  </section>
+
+  <section class="prices">
+    <h2>Diárias</h2>
+    <div data-aos="zoom-in" data-aos-duration="800" class="cards">
+      <div class="card">
+        <img src="./assets/flower1.png" alt="flor" />
+        <p>Single</p>
+      </div>
+      <div class="card">
+        <img src="./assets/flower2.png" alt="flor" />
+        <p>Casal</p>
+      </div>
+      <div class="card">
+        <img src="./assets/flower3.png" alt="flor" />
+        <p>Triplo</p>
+      </div>
+    </div>
+    <div class="checks">
+      <div class="check">
+        <i class="ph-calendar-check"></i>
+        <p>13:00 Check-in</p>
+      </div>
+      <div class="check">
+        <i class="ph-calendar-check"></i>
+        <p>12:00 Check-out</p>
+      </div>
+    </div>
+    <p>
+      OBS: A confirmação de reserva é feita mediante pagamento adiantado de 50% do total
+      da reserva.
+    </p>
+    <a class="btnStroke" target="_blank" href="https://linktr.ee/casabouganville.novoairao">
+      VER PREÇOS
+    </a>
+  </section>
+
+  <section class="testimonials">
+    <div class="testimonialsBox">
+      <div class="arrows">
+        <i id="left" class="ph-arrow-circle-left"></i>
+        <i id="right" class="ph-arrow-circle-right"></i>
+      </div>
+      <div id="test" class="depoimentos">
+        <div class="user user-active">
+          <div class="imagem-user">
+            <img src="./assets/testimonials/user1.jpeg" alt="user" />
+          </div>
+
+          <div class="content">
+            <p>
+              “O espaço é ótimo, a kitnet é uma graça, super linda, bem
+              decorada e limpíssima. O espaço tem cafeteira (e café) à
+              disposição, ar condicionado, Tv por assinatura. Muito bem
+              decorado. Os anfitriões foram super atenciosos, me ajudaram
+              muito na minha estadia, com certeza voltarei.”
+            </p>
+            <p>Mirela</p>
+            <p>São José dos Campos, SP</p>
+          </div>
+        </div>
+        <div class="user">
+          <div class="imagem-user">
+            <img src="./assets/testimonials/user2.jpeg" alt="user" />
+          </div>
+          <div class="content">
+            <p>
+              “Claudia é uma anfitriã muito agradável e generosa. Nós nos
+              sentimos muito bem-vindos e aproveitamos nossa estadia
+              totalmente. O apartamento estava limpo e totalmente equipado.”
+            </p>
+            <p>Christian</p>
+            <p>Colônia, Alemanha</p>
+          </div>
+        </div>
+        <div class="user">
+          <div class="imagem-user">
+            <img src="./assets/testimonials/user3.jpg" alt="user" />
+          </div>
+          <div class="content">
+            <p>
+              “Espaço extremamente organizado e aconchegante, fui bem recebido
+              e tive belas dicas de turismo dos anfitriões, já estou me
+              preparando para me hospedar novamente.”
+            </p>
+            <p>Bruno Cabral</p>
+            <p>Goiânia, GO</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners">
+    <h2>Parceiros</h2>
+    <div data-aos="zoom-in" data-aos-duration="800" class="logomarcas">
+      <a href="https://www.turismodeaventura.tur.br/">
+        <img src="./assets/partners/sandventure.png" alt="SandVenture" />
       </a>
-    </section>
+    </div>
+  </section>
 
-    <section class="testimonials">
-      <div class="testimonialsBox">
-        <div class="arrows">
-          <i id="left" class="ph-arrow-circle-left"></i>
-          <i id="right" class="ph-arrow-circle-right"></i>
-        </div>
-        <div id="test" class="depoimentos">
-          <div class="user user-active">
-            <div class="imagem-user">
-              <img src="./assets/testimonials/user1.jpeg" alt="user" />
-            </div>
-
-            <div class="content">
-              <p>
-                “O espaço é ótimo, a kitnet é uma graça, super linda, bem
-                decorada e limpíssima. O espaço tem cafeteira (e café) à
-                disposição, ar condicionado, Tv por assinatura. Muito bem
-                decorado. Os anfitriões foram super atenciosos, me ajudaram
-                muito na minha estadia, com certeza voltarei.”
-              </p>
-              <p>Mirela</p>
-              <p>São José dos Campos, SP</p>
-            </div>
-          </div>
-          <div class="user">
-            <div class="imagem-user">
-              <img src="./assets/testimonials/user2.jpeg" alt="user" />
-            </div>
-            <div class="content">
-              <p>
-                “Claudia é uma anfitriã muito agradável e generosa. Nós nos
-                sentimos muito bem-vindos e aproveitamos nossa estadia
-                totalmente. O apartamento estava limpo e totalmente equipado.”
-              </p>
-              <p>Christian</p>
-              <p>Colônia, Alemanha</p>
-            </div>
-          </div>
-          <div class="user">
-            <div class="imagem-user">
-              <img src="./assets/testimonials/user3.jpg" alt="user" />
-            </div>
-            <div class="content">
-              <p>
-                “Espaço extremamente organizado e aconchegante, fui bem recebido
-                e tive belas dicas de turismo dos anfitriões, já estou me
-                preparando para me hospedar novamente.”
-              </p>
-              <p>Bruno Cabral</p>
-              <p>Goiânia, GO</p>
-            </div>
-          </div>
+  <section class="contato">
+    <div class="up_contato">
+      <div data-aos-duration="800" data-aos="fade-right" class="contato_content">
+        <h2>Aproveite as férias com estilo</h2>
+        <a class="btnStroke" target="_blank" href="https://linktr.ee/casabouganville.novoairao">AGENDE AGORA</a>
+        <div class="icons">
+          <a target="_blank" href="https://linktr.ee/casabouganville.novoairao"><i class="ph-envelope-simple"></i></a>
+          <a target="_blank" href="https://linktr.ee/casabouganville.novoairao"><i class="ph-whatsapp-logo"></i></a>
+          <a href="https://www.instagram.com/casabouganville.novoairao/" target="_blank"><i
+              class="ph-instagram-logo"></i></a>
+          <a target="_blank" href="https://linktr.ee/casabouganville.novoairao"><i class="ph-tiktok-logo"></i></a>
+          <a target="_blank"
+            href="https://www.google.com/maps/dir/-16.7453989,-49.2740054/casa+bouganville+novo+airao/@-10.1547325,-65.6794608,5z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x926d19c188c2e089:0x605e9c6c8f740723!2m2!1d-60.9460676!2d-2.6382561"><i
+              class="ph-map-pin"></i></a>
         </div>
       </div>
-    </section>
-
-    <section class="partners">
-      <h2>Parceiros</h2>
-      <div data-aos="zoom-in" data-aos-duration="800" class="logomarcas">
-        <img src="./assets/partners/paodealho.png" alt="Pão de Alho" />
-        <img src="./assets/partners/ecoalert.png" alt="EcoAlert" />
+      <div class="image-container">
+        <img src="./assets/contato.jpeg" alt="paisagem" />
       </div>
-    </section>
+    </div>
 
-    <section class="contato">
-      <div class="up_contato">
-        <div
-          data-aos-duration="800"
-          data-aos="fade-right"
-          class="contato_content"
-        >
-          <h2>Aproveite as férias com estilo</h2>
-          <a
-            class="btnStroke"
-            target="_blank"
-            href="https://linktr.ee/casabouganville.novoairao"
-            >AGENDE AGORA</a
-          >
-          <div class="icons">
-            <a
-              target="_blank"
-              href="https://linktr.ee/casabouganville.novoairao"
-              ><i class="ph-envelope-simple"></i
-            ></a>
-            <a
-              target="_blank"
-              href="https://linktr.ee/casabouganville.novoairao"
-              ><i class="ph-whatsapp-logo"></i
-            ></a>
-            <a
-              href="https://www.instagram.com/casabouganville.novoairao/"
-              target="_blank"
-              ><i class="ph-instagram-logo"></i
-            ></a>
-            <a
-              target="_blank"
-              href="https://linktr.ee/casabouganville.novoairao"
-              ><i class="ph-tiktok-logo"></i
-            ></a>
-            <a
-              target="_blank"
-              href="https://www.google.com/maps/dir/-16.7453989,-49.2740054/casa+bouganville+novo+airao/@-10.1547325,-65.6794608,5z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x926d19c188c2e089:0x605e9c6c8f740723!2m2!1d-60.9460676!2d-2.6382561"
-              ><i class="ph-map-pin"></i
-            ></a>
-          </div>
-        </div>
-        <div class="image-container">
-          <img src="./assets/contato.jpeg" alt="paisagem" />
-        </div>
-      </div>
+    <footer>
+      <p>Desenvolvido por Pão de Alho, 2023</p>
+    </footer>
+  </section>
 
-      <footer>
-        <p>Desenvolvido por Pão de Alho, 2023</p>
-      </footer>
-    </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"></script>
+  <script src="./script.js"></script>
+</body>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"></script>
-    <script src="./script.js"></script>
-  </body>
 </html>
